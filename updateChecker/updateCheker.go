@@ -48,7 +48,7 @@ func githubRepoParse(reposURL string) (string, string, error) {
 	defer resp.Body.Close()
 
 	if resp.Status != "200 OK" {
-		return "", "", errors.New("The script can`t update. Get requests status not 200\n" + err.Error())
+		return "", "", errors.New("The script can`t update. Get requests status not 200\n")
 	}
 	defer resp.Body.Close()
 
